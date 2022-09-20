@@ -1,0 +1,26 @@
+{
+    "name": "apollo-server-docker",
+    "version": "1.0.0",
+    "description": "Apollo server starter project with TypeScript and Docker.",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -p .",
+        "clean": "rm -rf ./dist/* ",
+        "dev": "ts-node-dev --transpile-only --no-notify src/index.ts",
+        "start": "node dist/index.js",
+        "type-check": "tsc --noEmit --project './tsconfig.json'",
+        "type-watch": "tsc --watch --noEmit --project './tsconfig.json'"
+    },
+    "keywords": [],
+    "author": "Andrea Diotallevi",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server": "^3.10.0",
+        "graphql": "^16.5.0"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^4.8.3"
+    }
+}
