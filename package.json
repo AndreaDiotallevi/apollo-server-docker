@@ -6,10 +6,8 @@
     "scripts": {
         "build": "tsc -p .",
         "clean": "rm -rf ./dist/* ",
-        "dev": "ts-node-dev --transpile-only --no-notify src/index.ts",
-        "start": "node dist/index.js",
-        "type-check": "tsc --noEmit --project './tsconfig.json'",
-        "type-watch": "tsc --watch --noEmit --project './tsconfig.json'"
+        "dev": "ts-node-dev src/index.ts",
+        "start": "node dist/index.js"
     },
     "keywords": [],
     "author": "Andrea Diotallevi",
