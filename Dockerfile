@@ -4,7 +4,7 @@ COPY . .
 RUN yarn install
 RUN yarn build
 
-FROM node:16-alpine AS final
+FROM node:16-alpine
 WORKDIR /app
 COPY --from=builder ./app/dist ./dist
 COPY package.json .
